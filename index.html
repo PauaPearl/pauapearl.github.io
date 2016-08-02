@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Geog771_Sherie Crosby aka PauaPearl</title>
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+</head>
+<table width="100%" border="0">
+  <tr>
+    <td>
+    	<table width="100%" border="0">
+          <tr>
+            <td>
+            	<table width="100%" border="0" style="font-family:Tahoma, Geneva, sans-serif">
+                  <tr>
+                    <td align="left">icon goes here</td>
+                    <td><p><th align="center">GEOG 771<br />Spatial Analysis and Geocomputation</th></p></td>
+                    <td><th align="right">Sherie Crosby portfolio</th></td>
+                  </tr>
+                </table>
+	</td>
+          </tr>
+          <tr>
+            <td>
+            	<table style="font-family:Tahoma, Geneva, sans-serif" width="100%" border="3" bordercolor="#006633" cellpadding="2" callspacing="2">
+                  <tr>
+                    <td bgcolor="#4dff4d" bordercolor="#FFFFFF"><p align="center">home</p></td>
+                    <td bgcolor="#4dff4d" bordercolor="#FFFFFF"><p align="center">lab 2</p></td>
+                    <td bgcolor="#4dff4d" bordercolor="#FFFFFF"><p align="center">lab 3</p></td>
+                    <td bgcolor="#4dff4d" bordercolor="#FFFFFF"><p align="center">lab 4</p></td>
+                    <td bgcolor="#4dff4d" bordercolor="#FFFFFF"><p align="center">lab 5</p></td>
+                    <td bgcolor="#4dff4d" bordercolor="#FFFFFF"><p align="center">project</p></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+		</table>
+    </td>
+  </tr>
+  <tr>
+    <td><div id="mapid" style="width: 100%; height: 900px"></div>
+
+	<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+	<script>
+
+		var mymap = L.map('mapid').setView([-36.826421, 174.798954], 16);
+
+		L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpandmbXliNDBjZWd2M2x6bDk3c2ZtOTkifQ._QA7i5Mpkd_m30IGElHziw', {
+			maxZoom: 18,
+			attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+				'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+				'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+			id: 'mapbox.streets'
+		}).addTo(mymap);
+
+var MtVic = 
+    {
+      "type": "Feature",
+	   "properties": {
+        "name": "Mt Victoria",
+    },
+      "geometry": {
+        "type": "Polygon",
+ 
+       "coordinates": [
+          [
+            [
+              174.7995801355463,
+              -36.82726733321667,
+              0
+            ],
+            [
+              174.7994748363346,
+              -36.82755983465481,
+              0
+            ],
+            [
+              174.7995334348159,
+              -36.82766549446648,
+              0
+            ],
+            [
+              174.7998516460347,
+              -36.82770755358155,
+              0
+            ],
+            [
+              174.7998659371279,
+              -36.82770518981813,
+              0
+            ],
+            [
+              174.799909238408,
+              -36.8276971620978,
+              0
+            ],
+            [
+              174.800154799446,
+              -36.82784520754127,
+              0
+            ],
+            [
+              174.8003783750763,
+              -36.82777395098739,
+              0
+            ],
+            [
+              174.8004891005567,
+              -36.82768696341935,
+              0
+            ],
+            [
+              174.8005406387329,
+              -36.82748117180093,
+              0
+            ],
+            [
+              174.8007223407559,
+              -36.82713068183434,
+              0
+            ],
+            [
+              174.8007771571567,
+              -36.82697283634384,
+              0
+            ],
+            [
+              174.8007398133968,
+              -36.82681320189688,
+              0
+            ],
+            [
+              174.8006609235285,
+              -36.82651771532029,
+              0
+            ],
+            [
+              174.800469369491,
+              -36.82612575264217,
+              0
+            ],
+            [
+              174.8003868999083,
+              -36.82599872626821,
+              0
+            ],
+            [
+              174.8002104988289,
+              -36.82582555933369,
+              0
+            ],
+            [
+              174.8000413650335,
+              -36.82568747980325,
+              0
+            ],
+            [
+              174.7996236927656,
+              -36.82546442837992,
+              0
+            ],
+            [
+              174.7992987847013,
+              -36.82536575795093,
+              0
+            ],
+            [
+              174.7990662271913,
+              -36.82535010718875,
+              0
+            ],
+            [
+              174.7990164498163,
+              -36.82536171216182,
+              0
+            ],
+            [
+              174.7987616431321,
+              -36.82526565660298,
+              0
+            ],
+            [
+              174.7984740577806,
+              -36.82511248286804,
+              0
+            ],
+            [
+              174.798296744327,
+              -36.82514484751188,
+              0
+            ],
+            [
+              174.7981882423535,
+              -36.82528652226113,
+              0
+            ],
+            [
+              174.7980561500931,
+              -36.82558000366,
+              0
+            ],
+            [
+              174.7978319029348,
+              -36.82585265020685,
+              0
+            ],
+            [
+              174.7975526893973,
+              -36.82616165727525,
+              0
+            ],
+            [
+              174.7974888250092,
+              -36.82652243714497,
+              0
+            ],
+            [
+              174.7975469998252,
+              -36.82690161259058,
+              0
+            ],
+            [
+              174.7976646174658,
+              -36.82727698660412,
+              0
+            ],
+            [
+              174.79766399335,
+              -36.82729581049651,
+              0
+            ],
+            [
+              174.7976848227217,
+              -36.82733593539714,
+              0
+            ],
+            [
+              174.7977766565764,
+              -36.82762534828399,
+              0
+            ],
+            [
+              174.7981543817876,
+              -36.827772378983,
+              0
+            ],
+            [
+              174.7981776802276,
+              -36.82776765884241,
+              0
+            ],
+            [
+              174.7986511499968,
+              -36.82777285538104,
+              0
+            ],
+            [
+              174.7989504348126,
+              -36.82767320697908,
+              0
+            ],
+            [
+              174.799108925025,
+              -36.82753460568029,
+              0
+            ],
+            [
+              174.7992550405143,
+              -36.82720524243549,
+              0
+            ],
+            [
+              174.7995801355463,
+              -36.82726733321667,
+              0
+            ]
+          ]
+        ]  
+	}
+
+};
+
+//This is where I change the colour
+		
+	L.geoJson(MtVic, {
+	color: '#bf00ff', 
+	weight: '3px',
+	fillOpacity: '0.2',
+	fillColor: '#9900e6'
+		}
+		).addTo(mymap);
+//This is where I put the marker.
+		L.marker([-36.826, 174.799]).addTo(mymap)
+			.bindPopup("<b>Mt.Victoria</b><br />Historic reserve").openPopup();
+	</script></td>
+  </tr>
+</table>
+
+<body>
+</body>
+</html>
